@@ -1,0 +1,74 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="col"><h1>eCoin App</h1></div>
+<strong>Usage:</strong>
+<br />
+Make request with Postman, Fiddler or simply copying url into address bar
+<br />
+
+<p>
+    Api provides a way to:
+    <ul>
+        <li>create new Stellar account based on random key</li>
+        <li>get information about existing account</li>
+        <li>create trustline on eCoin asset</li>
+        <li>send eCoin between accounts</li>
+    </ul>
+</p>
+
+<h2>
+    Creating new account
+</h2>
+
+Creates new account with random key.
+<br />
+<br />
+<em>example:</em> <a href="/account/create">/account/create</a>
+<br />
+<em>parameters: </em>none
+
+<h2>
+    Get information about account
+</h2>
+
+Gets assets trusted by account with information about balance.
+<br />
+<br />
+<em>example:</em> <a href="/account/get?accountId=GDANJO62FTGGSAN2Q3IMG4N4RYR4QTGXY3EHRPQF66KAUEJLL7WNJ3RZ">/account/get?accountId={accountId}</a>
+<br />
+<em>parameters: </em>
+<ul>
+    <li><strong>AccountId</strong> - public key which was used to create account</li>
+</ul>
+
+<h2>
+    Create trustline
+</h2>
+
+Creates trust.
+<br />
+<br />
+<em>example:</em> <a href="/account/createTrustline?issuerSeed=SAUWSODLYZ76M5UUA4QWDOLCUNIF7LW6AEVJ5M5DILOPW6S3TESCDYMH&receiverSeed=SBYOTSZR2L3M3X4UO3JSQEUQ3C6WC42PPL6LJH7GGJGEOF7EEPQA2DJW">/account/createTrustline?issuerSeed={issuerSeed}&receiverSeed={receiverSeed}</a>
+<br />
+<em>parameters: </em>
+<ul>
+    <li><strong>issuerSeed</strong> - issuer account secret seed</li>
+    <li><strong>receiverSeed</strong> - receiver account secret seed</li>
+</ul>
+
+<h2>
+    Send eCoin
+</h2>
+
+Transfers eCoin between two accounts.
+<br />
+<br />
+<em>example:</em> <a href="/account/send?issuerSeed=SAUWSODLYZ76M5UUA4QWDOLCUNIF7LW6AEVJ5M5DILOPW6S3TESCDYMH&receiverSeed=SBYOTSZR2L3M3X4UO3JSQEUQ3C6WC42PPL6LJH7GGJGEOF7EEPQA2DJW&amount=10">/account/send?issuerSeed={issuerSeed}&receiverSeed={receiverSeed}&amount={amount}</a>
+<br />
+<em>parameters: </em>
+<ul>
+    <li><strong>issuerSeed</strong> - issuer account secret seed</li>
+    <li><strong>receiverSeed</strong> - receiver account secret seed</li>
+    <li><strong>amount</strong> - amount of eCoin to send</li>
+</ul>
