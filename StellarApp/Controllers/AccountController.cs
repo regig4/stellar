@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -25,7 +24,7 @@ namespace StellarApp.Controllers
             HttpClient client = new HttpClient();
             var response = await client.GetAsync(friendbotUrl);
             return Ok($"Created Account information:\nAccountId: {pair.AccountId}" +
-                $"\nPublic key: {pair.PublicKey}\nPrivate key: {pair.PrivateKey}\nSecret Seed: {pair.SecretSeed}" +
+                $"\nSecret Seed: {pair.SecretSeed}" +
                 $"\n{await response.Content.ReadAsStringAsync()}");
         }
 
@@ -77,7 +76,6 @@ namespace StellarApp.Controllers
 
             Asset eCoin = Asset.CreateNonNativeAsset("eCoin", issuingKeys.Address);
 
-            // Second, the issuing account actually sends a payment using the asset
             AccountResponse issuing = await server.Accounts.Account(issuingKeys.Address);
             Transaction sendECoin = new Transaction.Builder(issuing)
               .AddOperation(
@@ -85,7 +83,6 @@ namespace StellarApp.Controllers
               .Build();
             sendECoin.Sign(issuingKeys);
 
-            // And finally, send it off to Stellar!
             try
             {
                 var response = await server.SubmitTransaction(sendECoin);
@@ -94,9 +91,6 @@ namespace StellarApp.Controllers
             catch (Exception e)
             {
                 return BadRequest(e.Message);
-                // If the result is unknown (no response body, timeout etc.) we simply resubmit
-                // already built transaction:
-                // SubmitTransactionResponse response = server.submitTransaction(transaction);
             }
         }
 

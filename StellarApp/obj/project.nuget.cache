@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rkKCMLN3aP9ACp61Him6vORozg5M1Put2RuA14YqbdFJ2QumZpyqFNRKwJELYE+nl9euU4HMq7iqWLVlR31E3Q==",
+  "dgSpecHash": "MKkrHUlmx0/wcegmQqPbEvIL52k6iFXGvChVK20tDq/GgicxTISzPHRtoLVvX6noptcXsiOiR60kPUy7JrZzKA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bartek\\Source\\Repos\\stellar\\StellarApp\\StellarApp.csproj",
+  "projectFilePath": "c:\\Users\\Bartek\\Source\\Repos\\stellar\\StellarApp\\StellarApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bartek\\.nuget\\packages\\common.logging\\3.4.1\\common.logging.3.4.1.nupkg.sha512",
     "C:\\Users\\Bartek\\.nuget\\packages\\common.logging.core\\3.4.1\\common.logging.core.3.4.1.nupkg.sha512",

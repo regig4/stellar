@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bartek\\Source\\Repos\\stellar\\StellarApp\\StellarApp.csproj": {}
+    "c:\\Users\\Bartek\\Source\\Repos\\stellar\\StellarApp\\StellarApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bartek\\Source\\Repos\\stellar\\StellarApp\\StellarApp.csproj": {
+    "c:\\Users\\Bartek\\Source\\Repos\\stellar\\StellarApp\\StellarApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bartek\\Source\\Repos\\stellar\\StellarApp\\StellarApp.csproj",
+        "projectUniqueName": "c:\\Users\\Bartek\\Source\\Repos\\stellar\\StellarApp\\StellarApp.csproj",
         "projectName": "StellarApp",
-        "projectPath": "C:\\Users\\Bartek\\Source\\Repos\\stellar\\StellarApp\\StellarApp.csproj",
+        "projectPath": "c:\\Users\\Bartek\\Source\\Repos\\stellar\\StellarApp\\StellarApp.csproj",
         "packagesPath": "C:\\Users\\Bartek\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bartek\\Source\\Repos\\stellar\\StellarApp\\obj\\",
+        "outputPath": "c:\\Users\\Bartek\\Source\\Repos\\stellar\\StellarApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
