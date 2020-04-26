@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29920.165
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StellarApp", "StellarApp\StellarApp.csproj", "{CF2A0173-E563-4376-9293-28277A056ADA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF2A0173-E563-4376-9293-28277A056ADA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF2A0173-E563-4376-9293-28277A056ADA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF2A0173-E563-4376-9293-28277A056ADA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF2A0173-E563-4376-9293-28277A056ADA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B54835A2-1651-436F-9861-265D015915C7}
+	EndGlobalSection
+EndGlobal
